@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Desserts</h1>
+  <main class="main">
+    <div class="container-grid">
+    </div>
+
+    <!-- <div class="cart">
+      <h2>Your Cart (0)</h2>
+      <div class="cart-main">
+        <img class="empty-image" src="assets/images/illustration-empty-cart.svg" alt="">
+        <p class="empty-paragraph">Your added items will appear here</p>
+      </div>
+    </div> -->
+
+    <div class="cart">
+      <h2>Your Cart (<span class="total-quantity">0</span>)</h2>
+      <div class="order-grid"></div>
+      <div class="stay-end">
+        <div class="total">
+          <span>Order Total</span>
+          <strong class="order-total">&#36;<span class="total-cart-price">0</span></strong>
+        </div>
+        <div class="carbon-neutral">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="carbon-nertral">
+          <p>This is a <em>carbon-nertral</em> delivery</p>
+        </div>
+        <button class="confirm-btn js-confirm-btn">Confrim Order</button>
+      </div>
+    </div>
+
+    <div class="pop-up">
+      <img src="assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed">
+      <div>
+        <h2 class="pop-up__title">Order Confirmed</h2>
+        <p class="pop-up__message">We hope you enjoy your food!</p>
+      </div>
+      <div class="ordered-products">
+        <div class="ordered-products__product">
+          <img src="assets/images/image-waffle-thumbnail.jpg" alt="image-waffle-thumbnail">
+          <div class="info">
+            <h4>Classic Tiramisu</h4>
+            <div class="cost">
+              <span class="product-quantity">1x</span>
+              <span>&#64; &#36;5.00</span>
+            </div>
+          </div>
+          <span class="product__total-price">&#36;5.50</span>
+        </div>
+
+        <div class="ordered-products__product">
+          <img src="assets/images/image-waffle-thumbnail.jpg" alt="image-waffle-thumbnail">
+          <div class="info">
+            <h4>Classic Tiramisu</h4>
+            <div class="cost">
+              <span class="product-quantity">1x</span>
+              <span>&#64; &#36;5.00</span>
+            </div>
+          </div>
+          <span class="product__total-price">&#36;5.50</span>
+        </div>
+
+        <div class="total">
+          <span>Order Total</span>
+          <strong class="order-total">&#36;<span class="total-cart-price">0</span></strong>
+        </div>
+      </div>
+
+
+      <button class="confirm-btn js-start-new-order">Start New Order</button>
+
+    </div>
+  </main>
+
+  <script type="module" src="./desserts.js"></script>
+</body>
+
+</html>
